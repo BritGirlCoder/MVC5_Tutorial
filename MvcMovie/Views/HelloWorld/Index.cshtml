@@ -1,0 +1,12 @@
+﻿@*This section can be commented out because it's in the _ViewStart.cshtml file also.  That file defines the common layout for all the views.  Of course, if we were using a different layout for this file, then we'd want to explicitly reference it here.*@
+@*{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }*@
+
+@*Note the use of the ViewBag - a generic container for whatever we want displayed on the page.  It's a dynamic object, so as long as the property names match between the controller and the view, we can share whatever data is held in the property.  ViewBag has no predefined properties.  Note that to display a property in a textbox, we pass in the name of the property only as a string.  This is a little like the ControllerAs or scope in AngularJS*@
+@{ 
+    ViewBag.Title = "Movie List";
+}
+
+<h2>My Movie List</h2>
+<p>Hello from our View Template!</p>
